@@ -11,7 +11,7 @@ function App() {
 
   return (
       <div className='flex flex-col overflow-hidden'>
-      <Navbar></Navbar> 
+      <Navbar></Navbar> {/* add animation */}
       <section id='home'>
       <Landing></Landing> {/* add some animation*/}
       </section>

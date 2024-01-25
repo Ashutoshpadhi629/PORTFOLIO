@@ -5,7 +5,7 @@ const Landing = () => {
     <div className="flex">
 
       <div className="z-20 text-center py-32 md:py-48 h-screen  bg-slate-200 grid grid-rows-12 ">
-        <div className="hidden md:flex row-span-1 mt-24">
+        <div className="hidden md:flex row-span-1 mt-24 z-50">
         <SocialMediabar></SocialMediabar>
         </div>
         <div>

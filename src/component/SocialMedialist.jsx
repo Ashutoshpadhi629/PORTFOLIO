@@ -47,7 +47,7 @@ const SocialMediaList = () => {
 const SocialMediabar = () => {
   return (
     <div>
-      <div className="flex  flex-col fa-2xl bg-white p-3 rounded-xl">
+      <div className="flex  flex-col fa-2xl bg-white p-3 rounded-xl ">
         <a
           href="https://twitter.com/ash_padhi"
           target="_blank"

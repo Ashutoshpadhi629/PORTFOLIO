@@ -75,7 +75,7 @@ const Navbar = () => {
                   {!togglebar && (
                     <div className="origin-top-right absolute right-0 mt-6 w-screen rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-40">
                       <div
-                        className="py-4 border-solid shadow-lg border-b border-gray-500"
+                        className="py-4 border-solid shadow-lg border-b border-gray-500 "
                         role="menu"
                         aria-orientation="vertical"
                         aria-labelledby="options-menu"
@@ -86,7 +86,7 @@ const Navbar = () => {
                             HOME
                           </Link>
                         </li>
-                        <li className="md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen">
+                        <li className=" md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen">
                           <Link activeClass="active" smooth spy to="about" onClick={togglebarHandler}>
                             ABOUT
                           </Link>

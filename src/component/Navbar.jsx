@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 const Navbar = () => {
-  const [togglebar, setTogglebar] = useState(false);
+  const [togglebar, setTogglebar] = useState(true);
   const togglebarHandler = () => {
     setTogglebar((togglebar) => !togglebar);
   };

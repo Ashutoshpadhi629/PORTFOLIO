@@ -73,34 +73,41 @@ const Navbar = () => {
                     </svg>
                   )}
                   {!togglebar && (
-                    <div className="origin-top-right absolute right-0 mt-6 w-screen rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-40">
+                    <div className="  origin-top-right absolute right-0 mt-6 w-screen rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-40">
                       <div
-                        className="py-4 border-solid shadow-lg border-b border-gray-500 "
+                        className=" py-4 border-solid shadow-lg border-b border-gray-500  "
                         role="menu"
                         aria-orientation="vertical"
                         aria-labelledby="options-menu"
                       >
                         {/* Dropdown items */}
-                        <li className="md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen">
+                        
                           <Link activeClass="active" smooth spy to="home" onClick={togglebarHandler}>
+                          <li className=" md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen">
                             HOME
+                            </li>
                           </Link>
-                        </li>
-                        <li className=" md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen">
+                        
                           <Link activeClass="active" smooth spy to="about" onClick={togglebarHandler}>
+                          <li className="  md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen">
                             ABOUT
+                            </li>
                           </Link>
-                        </li>
-                        <li className="md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen" >
+
+                        
                           <Link activeClass="active" smooth spy to="project" onClick={togglebarHandler}>
+                          <li className="  md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen" >
                             PROJECTS
+                            </li>
                           </Link>
-                        </li>
-                        <li className="md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8  w-screen ">
+                      
+                        
                           <Link activeClass="active" smooth spy to="contact" onClick={togglebarHandler}>
+                          <li className="  md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8  w-screen ">
                             CONTACT
+                            </li>
                           </Link>
-                        </li>
+                       
                       </div>
                     </div>
                   )}

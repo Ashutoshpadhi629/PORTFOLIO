@@ -26,11 +26,11 @@ const Navbar = () => {
                   ABOUT
                 </Link>
               </li>
-              <li className="md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer">
+{/*               <li className="md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer">
                 <Link activeClass="active" smooth spy to="project">
                   PROJECTS
                 </Link>
-              </li>
+              </li> */}
               <li className="md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer">
                 <Link activeClass="active" smooth spy to="contact">
                   CONTACT
@@ -81,33 +81,54 @@ const Navbar = () => {
                         aria-labelledby="options-menu"
                       >
                         {/* Dropdown items */}
-                        
-                          <Link activeClass="active" smooth spy to="home" onClick={togglebarHandler}>
+
+                        <Link
+                          activeClass="active"
+                          smooth
+                          spy
+                          to="home"
+                          onClick={togglebarHandler}
+                        >
                           <li className=" md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen">
                             HOME
-                            </li>
-                          </Link>
-                        
-                          <Link activeClass="active" smooth spy to="about" onClick={togglebarHandler}>
+                          </li>
+                        </Link>
+
+                        <Link
+                          activeClass="active"
+                          smooth
+                          spy
+                          to="about"
+                          onClick={togglebarHandler}
+                        >
                           <li className="  md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen">
                             ABOUT
-                            </li>
-                          </Link>
+                          </li>
+                        </Link>
 
-                        
-                          <Link activeClass="active" smooth spy to="project" onClick={togglebarHandler}>
-                          <li className="  md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen" >
+                        {/*    <Link
+                          activeClass="active"
+                          smooth
+                          spy
+                          to="project"
+                          onClick={togglebarHandler}
+                        >
+                          <li className="  md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen">
                             PROJECTS
-                            </li>
-                          </Link>
-                      
-                        
-                          <Link activeClass="active" smooth spy to="contact" onClick={togglebarHandler}>
+                          </li>
+                        </Link> */}
+
+                        <Link
+                          activeClass="active"
+                          smooth
+                          spy
+                          to="contact"
+                          onClick={togglebarHandler}
+                        >
                           <li className="  md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8  w-screen ">
                             CONTACT
-                            </li>
-                          </Link>
-                       
+                          </li>
+                        </Link>
                       </div>
                     </div>
                   )}

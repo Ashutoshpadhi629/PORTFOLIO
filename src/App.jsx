@@ -20,7 +20,7 @@ function App() {
       </section>
      {/*add  <Projects></Projects> */}
      <section id='contact'>
-     <Contact></Contact>    {/*store the message somehow */}
+     <Contact></Contact>    
      </section>
       <Footer></Footer> 
     </div>

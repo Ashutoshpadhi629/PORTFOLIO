@@ -26,11 +26,11 @@ const Navbar = () => {
                   ABOUT
                 </Link>
               </li>
-{/*               <li className="md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer">
+              <li className="md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer">
                 <Link activeClass="active" smooth spy to="project">
                   PROJECTS
                 </Link>
-              </li> */}
+              </li>
               <li className="md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer">
                 <Link activeClass="active" smooth spy to="contact">
                   CONTACT
@@ -106,7 +106,7 @@ const Navbar = () => {
                           </li>
                         </Link>
 
-                        {/*    <Link
+                        <Link
                           activeClass="active"
                           smooth
                           spy
@@ -116,7 +116,7 @@ const Navbar = () => {
                           <li className="  md:m-4 md:mx-10 text-black font-bold hover:text-purple-700 cursor-pointer p-8 border-b border-gray-200 w-screen">
                             PROJECTS
                           </li>
-                        </Link> */}
+                        </Link>
 
                         <Link
                           activeClass="active"

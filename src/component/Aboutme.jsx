@@ -1,5 +1,23 @@
 import { Link } from "react-scroll";
 
+const skills = [
+  { name: "HTML" },
+  { name: "CSS" },
+  { name: "JavaScript" },
+  { name: "TypeScript" },
+  { name: "React" },
+  { name: "TailwindCSS" },
+  { name: "Next.js" },
+  { name: "NodeJs" },
+  { name: "Express" },
+  { name: "MongoDB" },
+  { name: "MySQL" },
+  { name: "Postgres" },
+  { name: "GIT" },
+  { name: "GitHub" },
+  { name: "Responsive Design" },
+];
+
 const Aboutme = () => {
   return (
     <div className="py-16 bg-slate-100">
@@ -51,10 +69,10 @@ const Aboutme = () => {
             don&#39;t hesitate to{" "}
             <span className="font-semibold text-neutral-800">contact</span> me.
           </h2>
-          <Link activeClass="active" smooth spy to= "contact">
-          <button className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-10 py-5 text-center me-2 mb-2 my-4">
-            CONTACT
-          </button>
+          <Link activeClass="active" smooth spy to="contact">
+            <button className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-10 py-5 text-center me-2 mb-2 my-4">
+              CONTACT
+            </button>
           </Link>
         </div>
         <div className="">
@@ -62,51 +80,14 @@ const Aboutme = () => {
             My skills
           </h1>
           <ul className="flex md:m-8 flex-wrap text-sm md:text-base">
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              HTML
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              CSS
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              JavaScript
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              Typescript
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              React
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              TailwindCSS
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              Next.js
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              NodeJs
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              Express
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              MongoDB
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              MySQL
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              Postgres
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              GIT
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              Github
-            </li>
-            <li className="bg-slate-300 p-4 m-3 rounded-md justify-center">
-              Responsive Design
-            </li>
+            {skills.map((items) => (
+              <li
+                key={items.name}
+                className="bg-slate-300 p-4 m-3 rounded-md justify-center"
+              >
+                {items.name}
+              </li>
+            ))}
           </ul>
         </div>
       </div>

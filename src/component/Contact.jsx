@@ -1,22 +1,24 @@
 import { useState } from "react";
 
 const Contact = () => {
-
-  const [name , setName] = useState('')
-  const [email , setEmail] = useState('')
-  const [message , setMessage] = useState('')
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
   };
   const mailHandler = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const subject = encodeURIComponent("From : " + name);
-    const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nMessage: " + message);
-    window.location.href = 'mailto:padhiashutosh106@gmail.com?subject=' + subject + '&body=' + body;
+    const body = encodeURIComponent(
+      "Name: " + name + "\nEmail: " + email + "\nMessage: " + message
+    );
+    window.location.href =
+      "mailto:padhiashutosh106@gmail.com?subject=" + subject + "&body=" + body;
   };
-  
+
   return (
-    <div className="bg-slate-200 py-16 flex flex-col">
+    <div className="bg-slate-100 py-16 flex flex-col">
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold  pt-3 md:pt-6">
           CONTACT
@@ -39,7 +41,7 @@ const Contact = () => {
             required=""
             id="name"
             placeholder="Enter your Name"
-            onChange={(e)=> setName(e.target.value)}
+            onChange={(e) => setName(e.target.value)}
             className="w-full p-2  bg-slate-200  rounded mb-4 mt-3 focus:outline-none"
           />
           <br />
@@ -51,7 +53,7 @@ const Contact = () => {
             required=""
             id="email"
             placeholder="Enter your Email"
-            onChange={(e)=> setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
             className="w-full p-2   bg-slate-200 rounded mb-4 mt-3 focus:outline-none"
           />
           <br />
@@ -62,7 +64,7 @@ const Contact = () => {
             id="message"
             required=""
             placeholder="Enter your Message"
-            onChange={(e)=> setMessage(e.target.value)}
+            onChange={(e) => setMessage(e.target.value)}
             className="w-full h-48 p-2  bg-slate-200  rounded mb-4 mt-3 focus:outline-none resize-none"
           ></textarea>
           <br />

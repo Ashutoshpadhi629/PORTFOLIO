@@ -1,4 +1,4 @@
-/* import { Link } from "react-scroll"; */
+import { Link } from "react-scroll";
 import { SocialMediabar } from "./SocialMedialist";
 const Landing = () => {
   return (
@@ -17,11 +17,15 @@ const Landing = () => {
             frontend and backend technologies, committed to delivering seamless
             and successful digital products
           </h2>
-          {/*           <Link activeClass="active" smooth spy to= "project">
-          <button className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-10 py-5 text-center me-2 mb-2 my-4">
+          <Link
+            activeClass="active"
+            smooth
+            spy
+            to="project"
+            className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-10 py-5 text-center me-2 mb-2 my-4 cursor-pointer"
+          >
             PROJECTS
-          </button>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </div>
